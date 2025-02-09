@@ -1,0 +1,66 @@
+Day 2 - System Design & Integration: Marketplace Builder Hackathon 2025
+System Design Overview
+On Day 2 of my Marketplace Builder Hackathon 2025 journey, I focused on designing the system architecture, defining how the frontend will communicate with the backend, and planning the integration of third-party APIs. The goal is to ensure a scalable, efficient, and seamless marketplace experience.
+
+Frontend-Backend Integration
+Frontend Tech Stack
+Framework: Next.js
+Styling: Tailwind CSS with ShadCn UI
+State Management: Redux
+Backend Architecture
+CMS: Sanity.io
+API Handling: RESTful APIs (GET, POST, PUT, DELETE)
+Third-Party API Integration: Payment gateway and product availability services
+Communication Flow
+The frontend will interact with the backend using HTTP requests, ensuring smooth data retrieval and updates.
+
+Third-Party API Integration
+Purpose of Third-Party API
+Payment Processing: Secure online transactions
+Product Availability: Fetch real-time stock updates
+Integration Approach
+The frontend sends a request to the backend.
+The backend processes the request and interacts with the third-party API.
+The backend returns a response to the frontend, updating the UI accordingly.
+Security Measures
+HTTPS for secure communication
+API Key Authentication to prevent unauthorized access
+API Routes Definition
+Product Management APIs
+GET /api/products → Fetch all available products
+Order Management APIs
+POST /api/order → Create a new order
+GET /api/order/:id → Retrieve order details
+PUT /api/order/:id → Update order status (e.g., shipped, delivered)
+Payment Processing APIs
+GET /api/payment/verify → Verify payment status
+Additional routes will be added for advanced payment gateway functionalities.
+
+Tech Stack Summary
+Component	Technology Used
+Frontend	Next.js, Tailwind CSS, ShadCn UI
+State Management	Redux
+Backend	Sanity.io
+Authentication	Clerk
+API Integration	Third-party payment processing & product availability
+System Workflow & Data Flow
+User Interaction: A user interacts with the marketplace (e.g., viewing products, placing orders).
+Frontend Requests: The frontend sends API requests to fetch or update data.
+Backend Processing: The backend processes requests, interacts with the database, and communicates with third-party APIs.
+Response Handling: The backend sends responses back to the frontend.
+UI Update: The frontend dynamically updates based on the response received.
+Check out the complete System Design Document for a detailed explanation.
+
+📌 Visual Representation: View the Data Schema Diagram to understand the data structure.
+
+Next Steps
+Now that the system architecture is in place, the next steps will focus on:
+✅ Implementing API Routes
+✅ Integrating Third-Party Services
+✅ Starting Frontend Development to connect all components
+
+🚀 Day 2 Recap
+Today’s focus was on laying out the system architecture, ensuring seamless communication between the frontend, backend, and third-party services. The next phase is to bring this system to life by implementing these integrations into a working prototype!
+
+🏷️ Tags:
+#SystemDesign #TechStack #APIIntegration #FrontendBackend #DataSchema #MarketplaceHackathon #EcommerceJourney #TechJourney
