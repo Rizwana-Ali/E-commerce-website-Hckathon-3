@@ -1,0 +1,54 @@
+# 🛒 E-Commerce Hackathon Project
+
+## 🚀 Overview
+This e-commerce platform was developed as part of a 24-hour hackathon challenge. The goal was to create a complete UI/UX design and implementation for an online shopping experience that is seamless, modern, and fully responsive.
+
+## 🎯 Key Features
+- **Responsive Layouts**: Optimized for mobile, tablet, and desktop, ensuring a smooth user experience across all devices.
+- **Product Grid and Filters**: A dynamic grid layout with sidebar filters for easy product discovery and navigation.
+- **Modern Design**: Clean typography, interactive elements, and hover effects for an engaging shopping experience.
+- **Flexibility and Scalability**: Built to accommodate future enhancements and additional pages effortlessly.
+
+## 🛠️ Tech Stack
+### Frontend
+- **React.js**
+- **Tailwind CSS**
+
+### Development Tools
+- **ESLint** (with custom rules disabled for special cases)
+- **Prettier**
+- **TypeScript**
+
+## 📂 Folder Structure
+```
+src/
+├── components/
+│   ├── cards/
+│   ├── filters/
+│   ├── global/
+│   ├── layout/
+├── app/
+│   ├── page.tsx
+│   ├── otherPages/
+```
+
+## 🔧 Setup Instructions
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/ecommerce-hackathon.git
+   ```
+2. **Navigate to the project directory:**
+   ```sh
+   cd hackathon-next-js
+   ```
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+5. **Open the app in your browser:**
+   [http://localhost:3000](http://localhost:3000)
+
