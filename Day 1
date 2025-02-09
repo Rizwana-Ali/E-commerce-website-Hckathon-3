@@ -1,0 +1,58 @@
+# Marketplace Builder Hackathon 2025 - Day 1
+
+## Marketplace Journey Begins 🚀
+
+Welcome to the first day of my journey in the **Marketplace Builder Hackathon 2025**! Today, I focused on establishing a solid foundation for my **E-commerce Marketplace**, which specializes in selling high-quality, stylish, and affordable furniture.
+
+---
+
+## Marketplace Overview 🛠️
+
+### Marketplace Type
+An **E-commerce Marketplace** dedicated to furniture, offering customers a seamless shopping experience with high-quality, modern, and affordable pieces.
+
+### Business Goals 🎯
+
+#### Identified Problem
+Customers often struggle to find furniture that combines modern aesthetics, high durability, and affordability.
+
+#### Target Audience
+- Homeowners looking to enhance their living spaces.
+- Interior designers sourcing furniture for their projects.
+- Individuals seeking stylish, functional furniture on a budget.
+
+#### Key Differentiators
+- **Customization Options**: Personalized furniture designs tailored to customer needs.
+- **Affordable Pricing**: High-quality furniture without the hefty price tag.
+- **Fast Delivery Service**: Ensuring a smooth and efficient shopping experience.
+
+---
+
+## Data Schema Design 🛠️
+
+To efficiently structure the marketplace, I designed a robust data schema encompassing:
+
+- **Products**: Includes details such as name, category, price, dimensions, colors, stock availability, and images.
+- **Orders**: Manages customer orders, payment details, and tracking statuses.
+- **Customers**: Stores user profiles, purchase history, and preferences.
+- **Delivery Zones**: Defines serviceable locations to optimize logistics and shipping.
+
+---
+
+## Additional Work 💻
+
+To document my journey and share insights, I have written a **Medium post** outlining my approach to planning and building an E-commerce platform. This post includes actionable tips for those looking to start similar projects.
+
+**Read it here:** [Medium Post]
+
+---
+
+## Day 1 Summary 🚀
+
+This marks the beginning of my exciting journey in building a functional and user-friendly **E-commerce Marketplace**. I look forward to refining the platform, implementing new features, and learning throughout this hackathon experience!
+
+---
+
+## Tags 🏷️
+
+#NextJS #Ecommerce #FurnitureMarketplace #TechJourney #DataSchema #BusinessGoals #Hackathon #ProductDevelopment #EcommerceJourney #Marketplace #NextJSDesignJAM
