@@ -1,0 +1,111 @@
+# **Day 3: API Integration & Data Migration**
+
+## **Objective**
+The goal of Day 3 was to integrate an external API and migrate product data into **Sanity CMS** to develop a robust marketplace backend. This involved testing API endpoints, transforming data, updating schemas, and ensuring seamless data rendering on the frontend.
+
+---
+
+## **Steps Performed**
+
+### **1. Understanding the API**
+- **API URL:** `https://hackathon-apis.vercel.app/api/products`
+- The API provided essential product information, including categories and images.
+- Used **Postman** to test endpoints and validate responses.
+
+### **2. Setting Up the Backend**
+- **Tools Used:**
+  - `axios` - Fetch data from the external API.
+  - `next-sanity` - Interface with Sanity CMS.
+  - `slugify` - Generate clean URL slugs for products.
+
+### **3. Updating Sanity Schema**
+- **Product Schema Enhancements:** Added `tags`, `dimensions`, and `category` fields.
+- **Category Schema:** Created a new schema to manage product categories.
+- **Schema Linking:** Established a **reference field** in the product schema to associate products with their categories.
+
+### **4. Data Migration Process**
+#### **Steps:**
+1. **Fetched data** from the external API using `axios`.
+2. **Uploaded images** to Sanity CMS and retrieved references.
+3. **Transformed API data** to align with the Sanity schema structure.
+4. **Imported data** into Sanity CMS using `createOrReplace`.
+
+#### **Error Handling:**
+- Used **try-catch** blocks to catch and manage API call failures.
+- Logged errors for debugging and troubleshooting.
+
+### **5. Frontend Integration**
+- Created reusable backend functions for fetching data from Sanity:
+  - `getAllProducts` – Retrieve all products.
+  - `getPopularProducts` – Fetch featured products.
+  - `getProductBySlug` – Retrieve product details via slug.
+- Rendered imported data on the frontend and verified correctness.
+
+---
+
+## **Challenges & Solutions**
+
+### **1. Handling Large Image Files**
+- **Issue:** Large images caused migration delays.
+- **Solution:** Utilized **Sanity asset manager** with buffer support for optimized uploads.
+
+### **2. Schema Mismatches**
+- **Issue:** API fields didn't perfectly match the Sanity schema.
+- **Solution:** Adjusted schemas and mapped API fields to match Sanity's structure.
+
+### **3. Data Integrity**
+- **Issue:** Risk of data loss or incorrect data migration.
+- **Solution:** Implemented **validation checks** for missing or malformed data before import.
+
+---
+
+## **Performance Optimizations**
+- **Batched API requests** to prevent rate limits and enhance speed.
+- **Cached frequently accessed API responses** for efficiency.
+- **Optimized queries** to fetch only required fields, reducing data load.
+
+---
+
+## **Results**
+✅ Successfully imported products and categories into Sanity CMS.  
+✅ Verified data integrity within Sanity Studio.  
+✅ Frontend displayed dynamic product listings and categories correctly.  
+
+---
+
+## **Future Improvements**
+- Automate **schema validation** to catch field mismatches before migration.
+- Implement **detailed logging** for better error tracking and debugging.
+- Utilize **Sanity webhooks** for real-time data syncing.
+
+---
+
+## **Running the Migration Script**
+
+### **Prerequisites:**
+✔ Node.js installed.  
+✔ Sanity CMS project configured.  
+✔ API accessible.
+
+### **Steps:**
+1. Clone the repository and navigate to the project directory:
+   ```bash
+   git clone [repository-url]
+   cd [project-directory]
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the migration script:
+   ```bash
+   node scripts/importData.js
+   ```
+4. Verify results:
+   - Open **Sanity Studio** to confirm data import.
+   - Check the frontend to ensure proper product listing.
+
+---
+
+## **Conclusion**
+Day 3 marked a successful integration of external API data into Sanity CMS, ensuring **data integrity, scalability, and flexibility**. This structured approach lays the foundation for handling dynamic data effectively while preparing for future enhancements in the marketplace backend.
